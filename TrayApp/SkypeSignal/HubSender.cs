@@ -1,0 +1,17 @@
+﻿using SkypeSignal.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SkypeSignal 
+{
+    class HubSender : ISender
+    {
+        public void SendData(string Command)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

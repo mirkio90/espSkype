@@ -2,14 +2,15 @@
 using System.IO.Ports;
 using System.Configuration;
 using System.Windows.Forms;
+using SkypeSignal.Interfaces;
 
 namespace SkypeSignal
 {
-    internal class SerialSender
+    internal class SerialSender : ISender
     {
         static SerialPort _serialPort;
 
-        public void SendSerialData(string Command)
+        public void SendData(string Command)
         {
             try
             {

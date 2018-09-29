@@ -72,7 +72,7 @@ namespace SkypeSignal
                     //We have an incomming call
                     if (avModality.State == ModalityState.Notified)
                     {
-                        _serialSender.SendSerialData(ColourStates.BlueIncomingCall);
+                        _serialSender.SendData(ColourStates.BlueIncomingCall);
 
                         notified = true;
                     }
@@ -93,41 +93,41 @@ namespace SkypeSignal
                 switch (status)
                 {
                     case "Free":
-                        _serialSender.SendSerialData(ColourStates.Green);
+                        _serialSender.SendData(ColourStates.Green);
                         break;
                     case "in-a-meeting":
                     case "Busy":
-                        _serialSender.SendSerialData(ColourStates.Red);
+                        _serialSender.SendData(ColourStates.Red);
                         break;
                     case "DoNotDisturb":
                     case "out-of-office":
                     case "urgent-interruptions-only":
                     case "presenting":
-                        _serialSender.SendSerialData(ColourStates.Purple);
+                        _serialSender.SendData(ColourStates.Purple);
                         break;
                     case "Away":
                     case "BeRightBack":
                     case "off-work":
                     case "Inactive":
-                        _serialSender.SendSerialData(ColourStates.Yellow);
+                        _serialSender.SendData(ColourStates.Yellow);
                         break;
                     case "on-the-phone":
                     case "in-a-conference":
-                        _serialSender.SendSerialData(ColourStates.RedFadeInACall);
+                        _serialSender.SendData(ColourStates.RedFadeInACall);
                         break;
                     default:
-                        _serialSender.SendSerialData(ColourStates.Off);
+                        _serialSender.SendData(ColourStates.Off);
                         break;
                 }
             }
-            else _serialSender.SendSerialData(ColourStates.Off);
+            else _serialSender.SendData(ColourStates.Off);
         }
 
         
         public void PartyDown()
         {
             //Wimmy Wam Wam Wozzle!!!
-            _serialSender.SendSerialData(ColourStates.PartyStrobe);
+            _serialSender.SendData(ColourStates.PartyStrobe);
             _partyTimer.Start();
         }
 

@@ -82,7 +82,7 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ColourStates.cs" />
+    <Compile Include="Constants\ColourStates.cs" />
     <Compile Include="ContextMenus.cs" />
     <Compile Include="FlashForm.cs">
       <SubType>Form</SubType>
@@ -90,6 +90,8 @@
     <Compile Include="FlashForm.Designer.cs">
       <DependentUpon>FlashForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="HubSender.cs" />
+    <Compile Include="Interfaces\ISender.cs" />
     <Compile Include="ProcessIcon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,6 +132,7 @@
     <Content Include="ResdevOpsSkypeSignal.ico" />
     <None Include="Resources\ResdevOpsSkypeSignal.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
