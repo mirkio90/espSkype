@@ -1,0 +1,17 @@
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.csprojAssemblyReference.cache
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.AboutForm.resources
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.FlashForm.resources
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.Properties.Resources.resources
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.csproj.GenerateResource.cache
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.csproj.CoreCompileInputs.cache
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\bin\Debug\SkypeSignal.exe.config
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\bin\Debug\SkypeSignal.exe
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\bin\Debug\SkypeSignal.pdb
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\bin\Debug\Microsoft.Lync.Model.dll
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\bin\Debug\Microsoft.Skype.UCWA.SDK.dll
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\bin\Debug\Microsoft.Office.Uc.dll
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.csproj.CopyComplete
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.exe
+C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.pdb
