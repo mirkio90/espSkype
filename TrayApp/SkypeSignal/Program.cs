@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Threading;
 using SkypeSignal.Interfaces;
+using SkypeSignal.Helper;
 
 namespace SkypeSignal
 {
@@ -19,7 +20,7 @@ namespace SkypeSignal
 
             //I've found that my Arduino hangs on the very first connection to work around that
             //kick-off connection to Light before we start and send a non-event code:
-            ISender serialSender = new SerialSender();
+            ISender serialSender = Helpers.SenderFabricator();
             serialSender.SendData("0");
             
             var skypeStatus = new SkypeStatusInfo();

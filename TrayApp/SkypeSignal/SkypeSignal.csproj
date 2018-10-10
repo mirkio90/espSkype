@@ -90,6 +90,7 @@
     <Compile Include="FlashForm.Designer.cs">
       <DependentUpon>FlashForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\Helpers.cs" />
     <Compile Include="HubSender.cs" />
     <Compile Include="Interfaces\ISender.cs" />
     <Compile Include="ProcessIcon.cs" />

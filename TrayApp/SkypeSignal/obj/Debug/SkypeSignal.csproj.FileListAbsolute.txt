@@ -15,3 +15,11 @@ C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal
 C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.csproj.CopyComplete
 C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.exe
 C:\Users\mirko.a.usai\Desktop\test skype\ino\SkypeSignal\src\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.pdb
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.csprojAssemblyReference.cache
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.AboutForm.resources
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.FlashForm.resources
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.Properties.Resources.resources
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.csproj.GenerateResource.cache
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.csproj.CoreCompileInputs.cache
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.exe
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.pdb

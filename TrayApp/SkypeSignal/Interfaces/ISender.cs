@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SkypeSignal.Interfaces
 {
-    interface ISender
+    public interface ISender
     {
         void SendData(string Command);
 

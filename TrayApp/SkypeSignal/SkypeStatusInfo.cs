@@ -5,12 +5,14 @@ using System.Timers;
 using Microsoft.Lync.Model;
 using Microsoft.Lync.Model.Conversation;
 using Microsoft.Lync.Model.Conversation.AudioVideo;
+using SkypeSignal.Interfaces;
+using SkypeSignal.Helper;
 
 namespace SkypeSignal
 {
     internal class SkypeStatusInfo
     {
-        readonly SerialSender _serialSender = new SerialSender();
+        readonly ISender _sender = Helpers.SenderFabricator();
         private readonly System.Timers.Timer _partyTimer = new System.Timers.Timer();
 
         LyncClient _lyncClient;
@@ -72,7 +74,7 @@ namespace SkypeSignal
                     //We have an incomming call
                     if (avModality.State == ModalityState.Notified)
                     {
-                        _serialSender.SendData(ColourStates.BlueIncomingCall);
+                        _sender.SendData(ColourStates.BlueIncomingCall);
 
                         notified = true;
                     }
@@ -93,41 +95,41 @@ namespace SkypeSignal
                 switch (status)
                 {
                     case "Free":
-                        _serialSender.SendData(ColourStates.Green);
+                        _sender.SendData(ColourStates.Green);
                         break;
                     case "in-a-meeting":
                     case "Busy":
-                        _serialSender.SendData(ColourStates.Red);
+                        _sender.SendData(ColourStates.Red);
                         break;
                     case "DoNotDisturb":
                     case "out-of-office":
                     case "urgent-interruptions-only":
                     case "presenting":
-                        _serialSender.SendData(ColourStates.Purple);
+                        _sender.SendData(ColourStates.Purple);
                         break;
                     case "Away":
                     case "BeRightBack":
                     case "off-work":
                     case "Inactive":
-                        _serialSender.SendData(ColourStates.Yellow);
+                        _sender.SendData(ColourStates.Yellow);
                         break;
                     case "on-the-phone":
                     case "in-a-conference":
-                        _serialSender.SendData(ColourStates.RedFadeInACall);
+                        _sender.SendData(ColourStates.RedFadeInACall);
                         break;
                     default:
-                        _serialSender.SendData(ColourStates.Off);
+                        _sender.SendData(ColourStates.Off);
                         break;
                 }
             }
-            else _serialSender.SendData(ColourStates.Off);
+            else _sender.SendData(ColourStates.Off);
         }
 
         
         public void PartyDown()
         {
             //Wimmy Wam Wam Wozzle!!!
-            _serialSender.SendData(ColourStates.PartyStrobe);
+            _sender.SendData(ColourStates.PartyStrobe);
             _partyTimer.Start();
         }
 

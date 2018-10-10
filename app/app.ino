@@ -19,9 +19,11 @@ static bool messagePending = false;
 static bool messageSending = true;
 
 static char *connectionString = "HostName=iothubmirkio.azure-devices.net;DeviceId=esp;SharedAccessKey=/pK+kwavQEJ4s6hewLEWa/rNL7YaDJi1YW3jC8uYQks=";
-static char* ssid = "wifi-internet";
+static char* ssid = "wifi-access";
 static char* username = "mirko.a.usai";
 static char* pass = "viabaronia20selargius";
+
+char wlpasswd[] = "viabaronia20selargius";
 
 static int interval = INTERVAL;
 static IOTHUB_CLIENT_LL_HANDLE iotHubClientHandle;
@@ -33,14 +35,14 @@ void setup() {
   initSerial();
   delay(2000);
 
-  setCommonWifi();
-  //initWifiPeap();
+  //setCommonWifi();
+  initWifiPeap();
   initTime();
 
    //initIoThubClient();
 
   iotHubClientHandle = IoTHubClient_LL_CreateFromConnectionString(connectionString, MQTT_Protocol);
-
+  
   while(iotHubClientHandle == NULL) {
     iotHubClientHandle = IoTHubClient_LL_CreateFromConnectionString(connectionString, MQTT_Protocol);
     Serial.println("Failed on IoTHubClient_CreateFromConnectionString.");
@@ -73,7 +75,7 @@ void initSerial(){
 
 void initWifiPeap() {
   wifi_set_opmode(0x01);
-
+  WiFi.mode(WIFI_STA);
   Serial.printf("Attempting to connect to SSID: %s.\r\n", ssid);
   struct station_config wifi_config;
 
@@ -89,6 +91,8 @@ void initWifiPeap() {
   wifi_station_set_enterprise_username((uint8*)username, strlen(username));
   wifi_station_set_enterprise_password((uint8*)pass, strlen(pass));
 
+  WiFi.begin(ssid, wlpasswd);
+  
   wifi_station_connect();
   Serial.print("Wifi station connect status:");
   Serial.println(wifi_station_get_connect_status());
@@ -99,11 +103,22 @@ void initWifiPeap() {
     delay(2000);
     Serial.println("Not connected");
   }
-
+  
+  WiFi.begin(ssid, wlpasswd);
   Serial.println("");
   Serial.println("WiFi connected");  
   Serial.println("IP address: ");
-  Serial.println(WiFi.localIP());  
+  Serial.println(WiFi.localIP() + "\n");
+
+  Serial.println("try to obtain ip...");
+  
+  while((String)WiFi.localIP() == "")
+  {
+      Serial.print(".");
+      delay(500);
+  }
+  Serial.println(WiFi.localIP());
+  WiFi.printDiag(Serial);  
 }
 
 void setCommonWifi(){
@@ -132,15 +147,20 @@ void initTime(){
       i++;
       delay(1000);
     }
-
+    i = 0;
     while (true)
     {
         epochTime = time(nullptr);
 
-        if (epochTime == 0)
+        if (epochTime < 30000 && i < 15)
         {
-            Serial.println("Fetching NTP epoch time failed! Waiting 2 seconds to retry.");
-            delay(2000);
+            i++;
+            Serial.println("Fetching NTP epoch time failed! Waiting 5 seconds to retry.");
+            delay(5000);
+        }
+        else if (epochTime < 30000 && i >= 15) {
+            Serial.print("insert time value");
+            Serial.read();
         }
         else
         {
