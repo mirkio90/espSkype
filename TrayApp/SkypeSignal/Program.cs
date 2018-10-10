@@ -27,8 +27,6 @@ namespace SkypeSignal
 
             var skypeStatusMonitor = new Thread(skypeStatus.StatusSetup);
             
-
-
             skypeStatusMonitor.Start();  
             
             //Show the System Tray Icon

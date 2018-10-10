@@ -16,5 +16,10 @@ namespace SkypeSignal
         {
             InitializeComponent();
         }
+
+        private void btn_Flash_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

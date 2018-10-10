@@ -91,12 +91,13 @@
       <DependentUpon>FlashForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\Helpers.cs" />
-    <Compile Include="HubSender.cs" />
+    <Compile Include="Senders\BluetoothSender.cs" />
+    <Compile Include="Senders\HubSender.cs" />
     <Compile Include="Interfaces\ISender.cs" />
     <Compile Include="ProcessIcon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SerialSender.cs" />
+    <Compile Include="Senders\SerialSender.cs" />
     <Compile Include="SkypeStatusInfo.cs" />
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>

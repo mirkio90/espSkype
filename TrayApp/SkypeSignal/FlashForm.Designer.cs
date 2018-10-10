@@ -36,12 +36,14 @@
             // 
             // btn_Flash
             // 
-            this.btn_Flash.Location = new System.Drawing.Point(268, 73);
+            this.btn_Flash.Location = new System.Drawing.Point(402, 112);
+            this.btn_Flash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Flash.Name = "btn_Flash";
-            this.btn_Flash.Size = new System.Drawing.Size(75, 23);
+            this.btn_Flash.Size = new System.Drawing.Size(112, 35);
             this.btn_Flash.TabIndex = 0;
             this.btn_Flash.Text = "Flash";
             this.btn_Flash.UseVisualStyleBackColor = true;
+            this.btn_Flash.Click += new System.EventHandler(this.btn_Flash_Click);
             // 
             // fbd_FirmwareBrowse
             // 
@@ -50,29 +52,32 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 13);
+            this.textBox1.Location = new System.Drawing.Point(20, 20);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(249, 20);
+            this.textBox1.Size = new System.Drawing.Size(372, 26);
             this.textBox1.TabIndex = 1;
             // 
             // btn_Browse
             // 
-            this.btn_Browse.Location = new System.Drawing.Point(268, 11);
+            this.btn_Browse.Location = new System.Drawing.Point(402, 17);
+            this.btn_Browse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Browse.Name = "btn_Browse";
-            this.btn_Browse.Size = new System.Drawing.Size(75, 23);
+            this.btn_Browse.Size = new System.Drawing.Size(112, 35);
             this.btn_Browse.TabIndex = 2;
             this.btn_Browse.Text = "Browse";
             this.btn_Browse.UseVisualStyleBackColor = true;
             // 
             // FlashForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 108);
+            this.ClientSize = new System.Drawing.Size(525, 166);
             this.Controls.Add(this.btn_Browse);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_Flash);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FlashForm";

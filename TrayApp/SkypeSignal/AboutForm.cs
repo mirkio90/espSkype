@@ -23,15 +23,6 @@ namespace SkypeSignal
            Close();
         }
 
-        private void btn_PartyTime_Click(object sender, EventArgs e)
-        {
-            SkypeStatusInfo statusInfo = new SkypeStatusInfo();
-
-            statusInfo.PartyDown();
-        }
-
-
-
         //Non-Generated Code:
 
         private void llbl_ResdevOps_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -1,4 +1,5 @@
 ﻿using SkypeSignal.Interfaces;
+using SkypeSignal.Senders;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -19,6 +20,8 @@ namespace SkypeSignal.Helper
                     return new HubSender();
                 case "SERIAL":
                     return new SerialSender();
+                case "BLUETOOTH":
+                    return new BluetoothSender();
                 default:
                     throw new ConfigurationErrorsException("Sender Configuration not found");
             }
