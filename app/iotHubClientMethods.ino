@@ -10,13 +10,13 @@ int deviceMethodCallback(
     const char *responseMessage = onSuccess;
     int result = 200;
 
-    if (strcmp(methodName, "start") == 0)
+    if (strcmp(methodName, "free") == 0)
     {
-        start();
+        free();
     }
-    else if (strcmp(methodName, "stop") == 0)
+    else if (strcmp(methodName, "busy") == 0)
     {
-        stop();
+        busy();
     }
     else
     {

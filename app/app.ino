@@ -1,3 +1,5 @@
+#include <Stepper.h>
+
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
 #include <WiFiUdp.h>
@@ -6,6 +8,7 @@
 #include <AzureIoTProtocol_MQTT.h>
 #include <AzureIoTUtility.h>
 
+#include <NeoPixelBus.h>
 #include <time.h>
 
 extern "C" {
@@ -15,28 +18,51 @@ extern "C" {
 
 #include "config.h"
 
+#define colorSaturation 128
+
+const uint16_t PixelCount = 12; // this example assumes 4 pixels, making it smaller will cause a failure
+const uint8_t PixelPin = 2;  // make sure to set this to the correct pin, ignored for Esp8266
+
 static bool messagePending = false;
 static bool messageSending = true;
 
 static char *connectionString = "HostName=iothubmirkio.azure-devices.net;DeviceId=esp;SharedAccessKey=/pK+kwavQEJ4s6hewLEWa/rNL7YaDJi1YW3jC8uYQks=";
 static char* ssid = "wifi-access";
 static char* username = "mirko.a.usai";
-static char* pass = "viabaronia20selargius";
+static char* pass = "***";
 
-char wlpasswd[] = "viabaronia20selargius";
+char wlpasswd[] = "***";
 
 static int interval = INTERVAL;
 static IOTHUB_CLIENT_LL_HANDLE iotHubClientHandle;
 static int messageCount = 1;
 int timezone = 1;
 
+NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod> strip(PixelCount, PixelPin);
+
+//color definition
+RgbColor red(colorSaturation, 0, 0);
+RgbColor green(0, colorSaturation, 0);
+RgbColor blue(0, 0, colorSaturation);
+RgbColor white(colorSaturation);
+RgbColor black(0);
+
+HslColor hslRed(red);
+HslColor hslGreen(green);
+HslColor hslBlue(blue);
+HslColor hslWhite(white);
+HslColor hslBlack(black);
+
 void setup() {
   // put your setup code here, to run once:
   initSerial();
   delay(2000);
 
-  //setCommonWifi();
-  initWifiPeap();
+  strip.Begin();
+  strip.Show();
+  
+  setCommonWifi();
+  //initWifiPeap();
   initTime();
 
    //initIoThubClient();
@@ -57,14 +83,14 @@ void setup() {
 void loop() {
     if (!messagePending && messageSending)
     {
-        char messagePayload[MESSAGE_MAX_LEN];
-        bool temperatureAlert = readMessage(messageCount, messagePayload);
-        sendMessage(iotHubClientHandle, messagePayload, temperatureAlert);
-        messageCount++;
-        delay(interval);
+//        char messagePayload[MESSAGE_MAX_LEN];
+//        bool temperatureAlert = readMessage(messageCount, messagePayload);
+//        sendMessage(iotHubClientHandle, messagePayload, temperatureAlert);
+//        messageCount++;
+//        delay(interval);
     }
     IoTHubClient_LL_DoWork(iotHubClientHandle);
-    delay(10);
+//    delay(10);
 }
 
 void initSerial(){
@@ -122,7 +148,7 @@ void initWifiPeap() {
 }
 
 void setCommonWifi(){
-  WiFi.begin("Infostrada-953F21", "M8K8NGCXMT");
+  WiFi.begin("Infostrada-953F21", pass);
 
   Serial.print("Connecting");
   while (WiFi.status() != WL_CONNECTED)

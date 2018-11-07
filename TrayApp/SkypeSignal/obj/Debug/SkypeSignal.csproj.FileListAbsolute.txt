@@ -23,3 +23,12 @@ C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\
 C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.csproj.CoreCompileInputs.cache
 C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.exe
 C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.pdb
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\SkypeSignal.exe.config
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\SkypeSignal.exe
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\SkypeSignal.pdb
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Lync.Model.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Skype.UCWA.SDK.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Office.Uc.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.csproj.CopyComplete

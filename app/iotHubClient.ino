@@ -17,6 +17,7 @@ static void sendCallback(IOTHUB_CLIENT_CONFIRMATION_RESULT result, void *userCon
     messagePending = false;
 }
 
+//wip
 static void sendMessage(IOTHUB_CLIENT_LL_HANDLE iotHubClientHandle, char *buffer, bool temperatureAlert)
 {
     IOTHUB_MESSAGE_HANDLE messageHandle = IoTHubMessage_CreateFromByteArray((const unsigned char *)buffer, strlen(buffer));
@@ -27,7 +28,7 @@ static void sendMessage(IOTHUB_CLIENT_LL_HANDLE iotHubClientHandle, char *buffer
     else
     {
         MAP_HANDLE properties = IoTHubMessage_Properties(messageHandle);
-        Map_Add(properties, "temperatureAlert", temperatureAlert ? "true" : "false");
+        //Map_Add(properties, "temperatureAlert", temperatureAlert ? "true" : "false");
         Serial.printf("Sending message: %s.\r\n", buffer);
         if (IoTHubClient_LL_SendEventAsync(iotHubClientHandle, messageHandle, sendCallback, NULL) != IOTHUB_CLIENT_OK)
         {
@@ -43,16 +44,38 @@ static void sendMessage(IOTHUB_CLIENT_LL_HANDLE iotHubClientHandle, char *buffer
     }
 }
 
-void start()
-{
-    Serial.println("Start sending temperature and humidity data.");
-    messageSending = true;
+void free() {
+  strip.SetPixelColor(0, hslGreen);
+  strip.SetPixelColor(1, hslGreen);
+  strip.SetPixelColor(2, hslGreen);
+  strip.SetPixelColor(3, hslGreen);
+  strip.SetPixelColor(4, hslGreen);
+  strip.SetPixelColor(5, hslGreen);
+  strip.SetPixelColor(6, hslGreen);
+  strip.SetPixelColor(7, hslGreen);
+  strip.SetPixelColor(8, hslGreen);
+  strip.SetPixelColor(9, hslGreen);
+  strip.SetPixelColor(10, hslGreen);
+  strip.SetPixelColor(11, hslGreen);
+  
+  strip.Show();
 }
 
-void stop()
-{
-    Serial.println("Stop sending temperature and humidity data.");
-    messageSending = false;
+void busy() {
+  strip.SetPixelColor(0, hslRed);
+  strip.SetPixelColor(1, hslRed);
+  strip.SetPixelColor(2, hslRed);
+  strip.SetPixelColor(3, hslRed);
+  strip.SetPixelColor(4, hslRed);
+  strip.SetPixelColor(5, hslRed);
+  strip.SetPixelColor(6, hslRed);
+  strip.SetPixelColor(7, hslRed);
+  strip.SetPixelColor(8, hslRed);
+  strip.SetPixelColor(9, hslRed);
+  strip.SetPixelColor(10, hslRed);
+  strip.SetPixelColor(11, hslRed);
+  
+  strip.Show();
 }
 
 IOTHUBMESSAGE_DISPOSITION_RESULT receiveMessageCallback(IOTHUB_MESSAGE_HANDLE message, void *userContextCallback)
