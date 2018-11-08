@@ -29,7 +29,7 @@ static bool messageSending = true;
 static char *connectionString = "HostName=iothubmirkio.azure-devices.net;DeviceId=esp;SharedAccessKey=/pK+kwavQEJ4s6hewLEWa/rNL7YaDJi1YW3jC8uYQks=";
 static char* ssid = "wifi-access";
 static char* username = "mirko.a.usai";
-static char* pass = "***";
+static char* pass = "M8K8NGCXMT";
 
 char wlpasswd[] = "***";
 
@@ -41,17 +41,23 @@ int timezone = 1;
 NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod> strip(PixelCount, PixelPin);
 
 //color definition
-RgbColor red(colorSaturation, 0, 0);
-RgbColor green(0, colorSaturation, 0);
-RgbColor blue(0, 0, colorSaturation);
-RgbColor white(colorSaturation);
-RgbColor black(0);
+RgbColor redc(colorSaturation, 0, 0);
+RgbColor greenc(0, colorSaturation, 0);
+RgbColor bluec(0, 0, colorSaturation);
+RgbColor purplec(138, 43, 226);
+RgbColor yellowc(colorSaturation, colorSaturation, 33);
 
-HslColor hslRed(red);
-HslColor hslGreen(green);
-HslColor hslBlue(blue);
-HslColor hslWhite(white);
-HslColor hslBlack(black);
+
+RgbColor whitec(colorSaturation);
+RgbColor blackc(0);
+
+HslColor hslRed(redc);
+HslColor hslGreen(greenc);
+HslColor hslBlue(bluec);
+HslColor hslPurple(purplec);
+HslColor hslYellow(yellowc);
+HslColor hslWhite(whitec);
+HslColor hslBlack(blackc);
 
 void setup() {
   // put your setup code here, to run once:
@@ -148,7 +154,7 @@ void initWifiPeap() {
 }
 
 void setCommonWifi(){
-  WiFi.begin("Infostrada-953F21", pass);
+  WiFi.begin("Infostrada-953F21", "M8K8NGCXMT");
 
   Serial.print("Connecting");
   while (WiFi.status() != WL_CONNECTED)
