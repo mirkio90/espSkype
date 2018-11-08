@@ -32,3 +32,13 @@ C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\
 C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Office.Uc.dll
 C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\obj\Debug\SkypeSignal.csproj.CopyComplete
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Azure.Amqp.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Azure.Devices.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Azure.Devices.Shared.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Owin.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Owin.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Azure.Devices.xml
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Azure.Devices.Shared.xml
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Owin.xml
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\System.Net.Http.Formatting.xml
