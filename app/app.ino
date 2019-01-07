@@ -1,6 +1,7 @@
-#include <Stepper.h>
+qyabdi#include <Stepper.h>
 
-#include <ESP8266WiFi.h>
+//#include <ESP8266WiFi.h>
+#include <WiFi.h>
 #include <WiFiClientSecure.h>
 #include <WiFiUdp.h>
 
@@ -45,7 +46,7 @@ RgbColor redc(colorSaturation, 0, 0);
 RgbColor greenc(0, colorSaturation, 0);
 RgbColor bluec(0, 0, colorSaturation);
 RgbColor purplec(138, 43, 226);
-RgbColor yellowc(colorSaturation, colorSaturation, 33);
+RgbColor yellowc(200, colorSaturation, 0);
 
 
 RgbColor whitec(colorSaturation);
@@ -154,7 +155,7 @@ void initWifiPeap() {
 }
 
 void setCommonWifi(){
-  WiFi.begin("Infostrada-953F21", "M8K8NGCXMT");
+  WiFi.begin("Honor 10", "bananapower");
 
   Serial.print("Connecting");
   while (WiFi.status() != WL_CONNECTED)

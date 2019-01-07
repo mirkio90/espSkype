@@ -42,3 +42,11 @@ C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\
 C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Azure.Devices.Shared.xml
 C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\Microsoft.Owin.xml
 C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\InTheHand.Devices.Bluetooth.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\InTheHand.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\InTheHand.Net.Personal.dll
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\InTheHand.pdb
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\InTheHand.xml
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\InTheHand.Devices.Bluetooth.pdb
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\InTheHand.Devices.Bluetooth.xml
+C:\Users\mirko.a.usai\Desktop\test skype\espSkype\TrayApp\SkypeSignal\bin\Debug\InTheHand.Net.Personal.xml
